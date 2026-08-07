@@ -6,7 +6,9 @@ class Activity3 {
 
         System.out.println("Enter your assignment grade: ");
         int grade = scn.nextInt();
-
+        
+        scn.close();
+        
         if (grade > 90){
             System.out.println("O");
         }else if (grade > 80){

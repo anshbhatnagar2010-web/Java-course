@@ -4,6 +4,7 @@ class Activity1{
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter an integer: ");
         int x=sc.nextInt();
+        sc.close();
         if(x>10){
             System.out.println("The number is greater than 10");
         }else if (x<10){

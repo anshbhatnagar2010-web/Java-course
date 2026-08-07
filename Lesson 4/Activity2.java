@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Activity2 {
+class Activity2 {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -12,6 +12,8 @@ public class Activity2 {
         
         int day = scn.nextInt();
 
+        scn.close();
+        
         switch(day){
             case 1:
                 System.out.println("Monday");
