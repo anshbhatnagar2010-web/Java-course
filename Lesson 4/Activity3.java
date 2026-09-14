@@ -9,24 +9,24 @@ import java.util.Scanner;
         System.out.println ("Enter second number: ");
         int second = scn.nextInt();
         
-        scn.nextLine();
+       // scn.nextLine();
 
         System.out.println ("Enter the operator: ");
-        String operator = scn.nextLine();
+        char operator = scn.next().charAt(0);
 
     scn.close();
     
         switch (operator){
-            case "+":
+            case '+':
                 System.out.println(first + second);
                 break;
-            case "-":
+            case '-':
                 System.out.println(first - second);
                 break;
-            case "*":
+            case '*':
                 System.out.println(first * second);
                 break;
-            case "/":
+            case '/':
                 System.out.println(first / second);
                 break;
             default:
