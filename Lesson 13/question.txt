@@ -1,0 +1,19 @@
+1. Consider the following class: 
+public class Book { private String title; private String author; private int numPages; public Book(String t, String a, int np) { title = t; author = a; numPages = np; } 
+public String getTitle() { return title; } public String getAuthor() { return author; } public int getNumPages() { return numPages; } }
+
+Write a constructor for a subclass called Student that takes three parameters: a name, an age, and a major. 
+The Student class should have an additional method called getMajor() that returns the student's major.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2.You will write a class Textbook, which is a subclass of Book. A Textbook has an edition number, which is a positive integer used to identify different versions of thebook. 
+The getBookInfo method, when called on a Textbook, returns a string that also includes the edition information, as shown in the example.
+
+Information about the book title and price must be maintained in the Book class. Information about the edition must be maintained in the Textbook class.
+
+The Textbook class contains an additional method, canSubstituteFor, which returns true if a Textbook is a valid substitute for another Textbook and returns 
+false otherwise.
+
+The current Textbook is a valid substitute for the Textbook referenced by the parameter of the canSubstituteFor method if the two Textbook objects have the same 
+title and if the edition of the current Textbook is greater than or equal to the edition of the parameter.

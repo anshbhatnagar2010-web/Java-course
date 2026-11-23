@@ -1,0 +1,6 @@
+a. Explain what polymorphism is and how it is used in this code. 
+Answer: 
+    Polymorphism means to exist in many forms, and to have code that 
+allows for methods or objects to be used differently based on when and why they are being called.
+In this code, the interface, "shape" is used in the form of rectangle and circle, two different shapes,
+that find area in different ways using the same interface.

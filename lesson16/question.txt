@@ -1,0 +1,41 @@
+
+
+Consider the following code: 
+
+
+public interface Shape { 
+double getArea(); 
+} 
+public class Rectangle implements Shape 
+{ 
+    private double width; 
+    private double height; 
+    public Rectangle(double width, double height) { 
+        this.width = width; 
+        this.height = height; 
+        } 
+    public double getArea() { 
+        return width * height; 
+        } 
+    } 
+    public class Circle implements Shape { 
+        private double radius; 
+        public Circle(double radius) { 
+            this.radius = radius; 
+        } public double getArea() { 
+            return Math.PI * radius * radius; 
+        } 
+    } 
+    public class AreaCalculator { 
+        public double sumAreas(Shape[] shapes) { 
+            double totalArea = 0; 
+            for (Shape shape : shapes) { 
+                totalArea += shape.getArea(); 
+            } return totalArea; 
+        } 
+    } 
+    
+a. Explain what polymorphism is and how it is used in this code. 
+
+b. Write code to create an array of Shape objects that contains at least one Rectangle and at least one Circle. 
+Pass this array to an instance of the AreaCalculator class and print the sum of the areas of the shapes in the array.
