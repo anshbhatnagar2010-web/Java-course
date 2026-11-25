@@ -1,0 +1,3 @@
+1. Encapulation is when one "hides" or makes things difficult to be accessed from outside the specific class or method.
+    In this code, it is used by the user of "private variables" which stop the code from accidentally being read by other
+    classes. 
